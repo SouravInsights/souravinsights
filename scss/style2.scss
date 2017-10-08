@@ -1,0 +1,57 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle-action-btn {
+	background-color: #0053FF;
+	border: none;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0px 2px 5px #888888;
+	animation: button-jump 2s infinite;
+	cursor: pointer;
+	
+	&:hover {
+		
+	}
+	
+	&__icon {
+		color: white;
+		font-size: 1.4em;
+		transform-origin: bottom center;
+		animation: hand-shake 2s infinite;
+	}
+}
+
+@keyframes hand-shake {
+	0% {
+		transform: rotate(-5deg);		
+	}
+	25% {
+		transform: rotate(15deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+@keyframes button-jump {
+	0% {
+		box-shadow: 0px 2px 5px #888888;
+	}
+	50% {
+		transform: scale(1.1);
+		box-shadow: 0px 6px 10px #888888;
+	}
+}
